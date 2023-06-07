@@ -66,9 +66,11 @@ class feedbackOptions extends React.Component {
 export default feedbackOptions;
 
 feedbackOptions.propTypes = {
-  good: PropTypes.string.isRequired,
-  bad : PropTypes.string.isRequired,
-  regular : PropTypes.string.isRequired
+  state: PropTypes.shape={
+    good: PropTypes.number.isRequired,
+    bad : PropTypes.number.isRequired,
+    regular : PropTypes.number.isRequired
+  }
 }
 
 
